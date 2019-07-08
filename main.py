@@ -30,10 +30,9 @@ def equation(mole1,mole2):
 def main():
   for i in range(len(molecules)):
     if i + 1 < len(molecules):
-      print(equation(molecules[i], molecules[i+1]))
+      print("The distance between " + molecules[i].name + " & "+ molecules[i+1].name +" is "+ str(equation(molecules[i], molecules[i+1])))
     else: #take the last item and do it to the first item
-      print(equation(molecules[i], molecules[0]))
-
-
+      print("The distance between " + molecules[i].name + " & "+ molecules[0].name +" is "+ str(equation(molecules[i], molecules[0])))
+  
 if __name__ == '__main__':
   main()
